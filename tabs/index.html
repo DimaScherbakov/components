@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tabs</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- for quick use of this widget it must have such structure:
+	ul with class tab__button-container
+		li with class tab__button-container__button
+		...
+	ul with class tab__content-container
+		li with class tab__content
+		...
+ -->
+
+<div class="tabs">
+<ul class="tab__button-container">
+	<li class="tab__button-container__button"><a href="">tab 1</a></li>
+	<li class="tab__button-container__button"><a href="">tab 2</a></li>
+	<li class="tab__button-container__button"><a href="">tab 3</a></li>
+</ul>
+
+<ul class="tab__content-container">
+	<li class="tab__content active">
+		<h4>Lorem ipsum dolor.</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iusto non minus. Laudantium ab totam facere quam, officia cupiditate eos voluptate iure eaque blanditiis. Beatae nemo quaerat, vitae quidem quasi enim assumenda eius repellendus soluta, eligendi odio! Deleniti, fuga fugit?</p>
+	</li>
+	<li class="tab__content">
+		<h4>Lorem ipsum dolor.</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab soluta temporibus est quis nulla aperiam, dolore deserunt ullam illo. Provident iusto, pariatur hic ut molestias itaque laudantium vel blanditiis commodi. Similique ex dolore tenetur earum voluptate sed eius perspiciatis.</p>
+	</li>
+	<li class="tab__content">
+		<h4>Lorem ipsum dolor.</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, excepturi, provident. Adipisci assumenda reprehenderit unde nisi incidunt libero sapiente sed, totam error! Laudantium possimus molestias unde sit, incidunt provident consequatur pariatur labore ad deleniti veritatis totam necessitatibus distinctio quas eligendi.</p>
+	</li>
+</ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+  		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  		crossorigin="anonymous"> 
+</script>
+<script type="text/javascript" src= "script.js"></script>
+</body>
+</html>

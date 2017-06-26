@@ -1,0 +1,32 @@
+/* for quick use of this widget it must have such structure:
+	ul with class tab__button-container
+		li with class tab__button-container__button
+		...
+	ul with class tab__content-container
+		li with class tab__content
+		...
+*/
+.tabs
+{
+
+}
+.tab__button-container
+{
+
+}
+.tab__button-container__button
+{
+	display: inline-block;
+}
+.tab__content-container
+{
+
+}
+.tab__content
+{
+	display:none;
+}
+.active
+{
+	display: block;
+}
