@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accordion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- 
+ -->
+
+<div id="fellowship"></div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+  		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  		crossorigin="anonymous"> 
+</script>
+<script type="text/javascript" src= "script.js"></script>
+<script type="text/javascript">
+	var characters = 
+	[
+		{
+			name:'Frodo',
+			title: ' A young well-to-do hobbit. When he discovers that the magic ring left to him by his eccentric "Uncle" Bilbo is the One Ring, he reluctantly takes on the quest to destroy it. Often referred to as the Ringbearer.'
+		},
+		{
+			name:'Gandalf',
+			title:'A wizard best known among hobbits for his fireworks and mischievous sense of humor, but actually one of the greatest powers of Middle-earth. He reveals the truth about the Ring to Frodo and acts as a guide and counselor. The leader of the Fellowship. Other names: Stormcrow, Mithrandir, the Grey Pilgrim, the White Rider, Tharkûn, Olórin, Incánus, and Gandalf the White.'
+		},
+		{
+			name:'Sam',
+			title:'A hobbit, Frodos gardener at home, and his servant and friend on the quest. Sam is very fond of stories about dragons and elves. A member of the Fellowship, he stays with Frodo after it is broken.'
+		},
+		{
+			name:'Merry',
+			title: "A young hobbit, one of Frodo's many cousins. A member of the Fellowship."
+		},
+		{
+			name:'Pippin',
+			title:"A young hobbit, one of Frodo's many cousins. A member of the Fellowship. Later, a member of the Tower Guard of Minas Tirith."
+		},
+		{
+			name:'Aragorn',
+			title:"The heir of Isildur and the rightful king of Gondor, a mighty warrior and healer. He was raised by the elves of Rivendell and now lives in exile as leader of the Dúnedain, the Rangers of the North. The time has now come for him to reclaim the throne. He leads the Fellowship after Gandalf's fall. Other names: Strider, Elessar, Elfstone, Dúnadan."
+		},
+		{
+			name:'Legolas',
+			title: "Son of Thranduil, king of the Mirkwood elves. He is a great archer with keen eyesight. A member of the Fellowship. Close friend of Gimli the dwarf and companion of Aragorn."
+		},
+		{
+			name:'Gimli',
+			title: "Son of Glóin, a dwarf of the Lonely Mountain. A member of the Fellowship. Close friend of Legolas the elf and companion of Aragorn. He falls in love with Galadriel."
+		},
+		{
+			name:'Boromir',
+			title:"Son of Denethor, the Steward of Gondor. Sent to Rivendell to decipher a prophetic dream, he joins the Fellowship. He believes that the Ring should be used as a weapon against the Enemy and that trying to destroy it is foolish. He succumbs to the temptation of the Ring and tries to take it from Frodo. He dies defending Merry and Pippin from orcs."
+		}
+	];
+	var fellowship = new Accordion({chars: characters});
+	var elem = fellowship.getElem();
+	document.getElementById("fellowship").appendChild(elem);
+</script>
+</body>
+</html>
